@@ -6,7 +6,10 @@
 <script>
     // 1 es piedra, 2 es papel, 3 es tijera
     let jugador = 0
-    let pc = 2
+    jugador = "Cami"
+    let max = 3
+    let min = 1
+    let pc = Math.floor(Math.random()*(max-min+1)+min)
     jugador = prompt("Elige: 1 para piedra, 2 para papel, 3 para tijera")
     //alert("Elegiste " + jugador)
     if(jugador == 1) {
@@ -38,18 +41,13 @@
         alert("empate")
     }else if (jugador == 1 && pc == 3){
         alert("Ganaste")
-    }else if (jugador == 2 && pc == 3){
-        alert ("Perdiste")
     }else if (jugador == 3 && pc == 2){
-        alert ("ganaste")
+        alert("Ganaste")
     }else if (jugador == 2 && pc == 1){
-        alert("ganaste")
-    }else if (jugador == 1 && pc == 2){
+        alert("Ganaste")
+    }else {
         alert("Perdiste")
-    }else if (jugador == 3 && pc == 1){
-        alert("perdiste")
     }
-
 </script>
     </head>
     <body>
