@@ -4,24 +4,8 @@ import "fmt"
 
 func main() {
 	var j int = 1
-	fmt.Printf("%d\n", j)
-	j += 1
-	fmt.Printf("%d\n", j)
-	j += 1
-	fmt.Printf("%d\n", j)
-	j += 1
-	fmt.Printf("%d\n", j)
-	j += 1
-	fmt.Printf("%d\n", j)
-	j += 1
-	fmt.Printf("%d\n", j)
-	j += 1
-	fmt.Printf("%d\n", j)
-	j += 1
-	fmt.Printf("%d\n", j)
-	j += 1
-	fmt.Printf("%d\n", j)
-	j += 1
-	fmt.Printf("%d\n", j)
-
+	for i := 1; i <= 10; i++ {
+		fmt.Printf("%d\n", j)
+		j = j + 1
+	}
 }
